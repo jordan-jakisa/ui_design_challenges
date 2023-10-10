@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Smooch+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Smooch+Sans:wght@200;300;400;500;600;700;800;900&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/background_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+body .container .products-section{
+    color: #fff;
+    padding: 2rem 6rem;
+    height: 100vh;
+}
+
+body .container .products-section .logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+body .container .products-section .collections{
+    position: absolute;
+    top: 50%;
+    left: 1;
+    transform: translate(-50%, -50%);
+    margin-left: 4rem;
+}
+
+body .container .products-section .collections h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+body .container .products-section .collections div{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+body .container .products-section .collections div h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body .container .products-section .collections h6{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 1rem;
+}
+
+body .container .products-section .collections div .divider{
+    height: 1px;
+    background-color: #fff;
+    width: 20px;
+    margin-right: 1rem;
+}
+
+body .container .login-section{
+    color: #fff;
+    height: 100vh;
+    background: rgba(0,0,0, 0.22);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    padding: 2rem 4rem;
+}
+
+.close-btn-container{
+    display: flex;
+    justify-content: end;
+}
+
+body .container .login-section .close-btn{
+    border: 2px solid white;    
+    padding: 0.7rem 1rem;
+    border-radius: 16px;
+}
+
+body .container .login-section h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+body .container .login-section h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    line-height: 36px;
+}
+
+input{
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background: transparent;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.form-input{
+    display: flex;
+    gap: 8px;
+    color: white;
+    padding: 1rem 0;
+    border-bottom: #fff dotted;
+    margin-bottom: 1rem;
+}
+
+button{
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    height: 48px;
+    border-radius: 24px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+button i{
+    font-weight: bolder;
+    font-size: 1.7rem;
+    align-self: center;
+}
+
+.separator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.other-divider{
+    width: 4rem;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons{
+    border: 1px solid #fff;
+    border-radius: 27px;
+    height: 54px;
+    width: 54px;
+    align-content: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.social-icons i{
+    height: 24px;
+    width: 24px;
+    padding: 15px;
+    align-self: center;
+}
+
+.register-text{
+    display: flex;
+}
+
+.ask-to-register{
+    font-size: 1px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.register-text h4{
+    font-weight: bold;
+}
