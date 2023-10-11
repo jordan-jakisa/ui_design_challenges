@@ -197,3 +197,7 @@ button i{
 .register-text h4{
     font-weight: bold;
 }
+
+.ask-to-register span{
+    font-weight: bold;
+}
