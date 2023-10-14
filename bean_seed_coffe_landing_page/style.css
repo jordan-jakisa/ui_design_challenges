@@ -34,9 +34,20 @@ button {
     background-size: cover;
 }
 
+.hero-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
 .hero-section .transparent-overlay {
     height: 100%;
     width: 100%;
+    background: linear-gradient(90deg, #1E1E1E -6.88%, rgba(0, 0, 0, 0.00) 87.45%);
 }
 
 .nav-bar {
@@ -352,12 +363,12 @@ button {
     width: 88px;
 }
 
-.why-us div h1{
+.why-us div h1 {
     font-size: 30px;
     font-weight: 700;
 }
 
-.why-us div button{
+.why-us div button {
     font-size: 16px;
     font-weight: 700;
     color: #1E1E1E;
@@ -379,13 +390,13 @@ button {
     width: 220px;
 }
 
-.order-now{
+.order-now {
     height: 80vh;
     width: 100%;
     position: relative;
 }
 
-.order-now .large-image-bg{
+.order-now .large-image-bg {
     width: 100%;
     height: 80vh;
     margin-top: 3rem;
@@ -395,7 +406,18 @@ button {
     position: relative;
 }
 
-.order-now .large-image-bg img{
+.order-now .large-image-bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    background-color: #603809;
+    opacity: 0.8;
+}
+
+.order-now .large-image-bg img {
     width: 657px;
     height: 65vh;
     position: absolute;
@@ -403,7 +425,7 @@ button {
     bottom: 0;
 }
 
-.order-now .order-content{
+.order-now .order-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -420,7 +442,7 @@ button {
     margin: 4rem 0;
 }
 
-.order-now .order-content div{
+.order-now .order-content div {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -429,18 +451,18 @@ button {
     margin-right: 10rem;
 }
 
-.order-now .order-content div h1{
+.order-now .order-content div h1 {
     font-size: 54px;
     font-weight: 700;
 }
 
-.order-now .order-content div p{
+.order-now .order-content div p {
     font-size: 20px;
     font-weight: 400;
     padding-right: 10rem;
 }
 
-.order-now .order-content div button{
+.order-now .order-content div button {
     width: 134px;
     height: 48px;
     border-radius: 24px;
@@ -448,30 +470,30 @@ button {
     font-weight: 700;
 }
 
-.order-now .order-content img{
+.order-now .order-content img {
     width: 300px;
     height: 467px;
     margin-right: 10rem;
 }
 
-.feed-back{
+.feed-back {
     height: 100vh;
     width: 100%;
     position: relative;
     display: flex;
 }
 
-.feed-back div img{
+.feed-back div img {
     height: 498px;
     width: 272px;
 }
 
-.feed-back .feed-back-content{
+.feed-back .feed-back-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    
+
     position: absolute;
     top: 0;
     left: 0;
@@ -479,7 +501,7 @@ button {
     margin: 6rem 0rem;
 }
 
-.feed-back div .splash-left{
+.feed-back div .splash-left {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -488,7 +510,7 @@ button {
     height: 226px;
 }
 
-.feed-back div .splash-right{
+.feed-back div .splash-right {
     position: absolute;
     top: 0;
     right: 0;
@@ -496,19 +518,19 @@ button {
     height: 226px;
 }
 
-.feed-back .feed-back-content h1{
+.feed-back .feed-back-content h1 {
     font-size: 54px;
     font-weight: 700;
     color: #603809;
 }
 
-.feed-back .feed-back-content p{
+.feed-back .feed-back-content p {
     font-weight: 400;
     font-size: 20px;
     color: #707070;
 }
 
-.feed-back .feed-back-content div{
+.feed-back .feed-back-content div {
     position: relative;
     width: 100%;
     display: flex;
@@ -517,54 +539,54 @@ button {
     align-items: center;
 }
 
-div .pointer{
+div .pointer {
     width: 82px;
     height: 82px;
     background-color: #F9C06A;
     border-radius: 16px;
 }
 
-.feed-back .feed-back-content div .feedback-card{
+.feed-back .feed-back-content div .feedback-card {
     background-color: #FFF9F1;
     border: 1px solid rgba(249, 192, 106, 0.42);
 
     position: absolute;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -5%);
 
     margin-top: 5rem;
-   
+
     width: 70%;
     padding: 2rem 4rem;
 }
 
 
-.feed-back .feed-back-content div .feedback-card i{
+.feed-back .feed-back-content div .feedback-card i {
     font-size: 220px;
     font-weight: 700;
     color: #603809;
-    align-self:flex-start;
+    align-self: flex-start;
     top: 0;
     left: 0;
 }
 
-.feed-back .feed-back-content div div h3{
+.feed-back .feed-back-content div div h3 {
     font-size: 32px;
     font-weight: 700;
     color: #603809;
     margin-top: 1rem;
 }
 
-.feed-back .feed-back-content div div img{
+.feed-back .feed-back-content div div img {
     height: 112px;
     width: 112px;
-    border-radius: 16px;    
+    border-radius: 16px;
     margin-bottom: -62px;
     margin-top: 1rem;
 }
 
-.pointer-left{
+.pointer-left {
     background-color: #F9C06A;
     border-radius: 16px;
     position: absolute;
@@ -576,12 +598,12 @@ div .pointer{
     margin-left: 6.5rem;
 }
 
-.pointer-left i{
+.pointer-left i {
     font-size: 24px;
     padding: 29px;
 }
 
-.pointer-right{
+.pointer-right {
     background-color: #F9C06A;
     border-radius: 16px;
     position: absolute;
@@ -592,24 +614,24 @@ div .pointer{
     margin-right: 6.5rem;
 }
 
-.pointer-right i{
+.pointer-right i {
     font-size: 24px;
     padding: 29px;
 }
 
-.feed-back .feed-back-content div .feedback-card div{
+.feed-back .feed-back-content div .feedback-card div {
     position: relative;
     width: 100%;
-}   
+}
 
-.feedback-message{
+.feedback-message {
     border: 1px solid rgba(249, 192, 106, 0.42);
     background: #FFF9F1;
     width: 80%;
     margin-top: 2rem;
 }
 
-.feedback-message i{
+.feedback-message i {
     font-size: 110px;
     font-weight: 500;
     text-align: left;
@@ -617,7 +639,7 @@ div .pointer{
     color: #603809;
 }
 
-.feed-back .feed-back-content div div p{
+.feed-back .feed-back-content div div p {
     font-size: 18px;
     font-weight: 600;
     color: #707070;
@@ -626,7 +648,7 @@ div .pointer{
     margin: 0 8rem;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
 
@@ -634,7 +656,7 @@ div .pointer{
     margin-top: 2rem;
 }
 
-.footer .coffee-cups{
+.footer .coffee-cups {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -645,17 +667,17 @@ div .pointer{
     z-index: 1;
 }
 
-.footer .coffee-cups img{
-    width: 444px;
+.footer .coffee-cups img {
+    width: 360px;
     height: 358px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: column;
 }
 
-.subscribe{
+.subscribe {
     background-image: url('images/Rectangle\ 14.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -667,22 +689,41 @@ div .pointer{
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
-.subscribe h1{
+.subscribe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: #603809;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+
+
+.subscribe h1 {
     color: white;
-    font-size: 54;
+    font-size: 54px;
     font-weight: 700;
+    z-index: 1;
 }
 
-.subscribe p{
+.subscribe p {
     color: white;
     font-size: 20px;
     font-weight: 400;
     line-height: 34px;
+    z-index: 1;
+
 }
 
-.subscribe div{
+.subscribe div {
     display: flex;
     justify-content: center;
     width: 642px;
@@ -691,29 +732,35 @@ div .pointer{
     border-radius: 4px;
     border: 1px solid rgba(249, 192, 106, 0.42);
     margin-top: 1rem;
+    z-index: 1;
+
 
 
 }
 
-.subscribe div input{
+.subscribe div input {
     padding: 0 2rem;
     color: rgba(0, 0, 0, 0.34);
     font-size: 20px;
     font-weight: 400;
     border: none;
+    z-index: 1;
+
 
 }
 
-.subscribe div button{
+.subscribe div button {
     width: 137px;
-    font: 22px;
+    font-size: 18px;
     font-weight: 700;
     color: #603809;
+    z-index: 1;
+
 }
 
-.footer-links{
+.footer-links {
     height: 60vh;
-    background-image: url('images/fotter_image.png');
+    background-image: url('images/brown-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -722,39 +769,53 @@ div .pointer{
     align-items: center;
     padding: 0 6rem;
     gap: 4rem;
+
+    color: white;
 }
 
-.footer-content .footer-section{
+.footer-links::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-image: url('images/fotter_image.png');
+    opacity: 0.5;
+    background-blend-mode: overlay;
+}
+
+.footer-content .footer-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 
-.footer-content .footer-section h4{
+.footer-content .footer-section h4 {
     font-size: 26px;
     font-weight: 700;
     align-self: flex-start;
 }
 
-.footer-content .footer-section h6{
+.footer-content .footer-section h6 {
     font-size: 18px;
     line-height: 42px;
     font-weight: 400;
 }
 
-.footer-content .footer-section p{
+.footer-content .footer-section p {
     font-size: 14px;
     margin-top: 1rem;
     font-weight: 400;
 }
 
-.address{
+.address {
     font-size: 18px;
     font-weight: 400;
 }
 
-.section-1 div{
+.section-1 div {
     margin-top: 2rem;
     display: flex;
     width: 156px;
