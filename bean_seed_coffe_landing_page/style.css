@@ -483,12 +483,17 @@ button {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 1;
+    width: 414px;
+    height: 226px;
 }
 
 .feed-back div .splash-right{
     position: absolute;
     top: 0;
     right: 0;
+    width: 414px;
+    height: 226px;
 }
 
 .feed-back .feed-back-content h1{
@@ -519,36 +524,10 @@ div .pointer{
     border-radius: 16px;
 }
 
-.feed-back .feed-back-content div .pointer-left{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    z-index: 1;
-}
-
-.feed-back .feed-back-content div .pointer-left i{
-    font-size: 32px;
-    color: #603809;
-    padding: 25px;
-}
-
-.feed-back .feed-back-content div .pointer-right{
-    position: absolute;
-    top: 50%;
-    right: 0;
-}
-
-.feed-back .feed-back-content div .pointer-right i{
-    font-size: 32px;
-    color: #603809;
-    padding: 25px;
-}
-
-.feed-back .feed-back-content div div{
+.feed-back .feed-back-content div .feedback-card{
     background-color: #FFF9F1;
-    z-index: -6;
     border: 1px solid rgba(249, 192, 106, 0.42);
+
     position: absolute;
     top: 50%; 
     left: 50%; 
@@ -560,22 +539,14 @@ div .pointer{
     padding: 2rem 4rem;
 }
 
-.feed-back .feed-back-content div div i{
+
+.feed-back .feed-back-content div .feedback-card i{
     font-size: 220px;
     font-weight: 700;
     color: #603809;
     align-self:flex-start;
     top: 0;
     left: 0;
-}
-
-.feed-back .feed-back-content div div p{
-    font-size: 18px;
-    font-weight: 600;
-    color: #707070;
-    text-align: center;
-    width: 100%;
-    margin: 0 8rem;
 }
 
 .feed-back .feed-back-content div div h3{
@@ -591,4 +562,66 @@ div .pointer{
     border-radius: 16px;    
     margin-bottom: -62px;
     margin-top: 1rem;
+}
+
+.pointer-left{
+    background-color: #F9C06A;
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 82px;
+    height: 82px;
+    z-index: 1;
+    margin-left: 6.5rem;
+}
+
+.pointer-left i{
+    font-size: 24px;
+    padding: 29px;
+}
+
+.pointer-right{
+    background-color: #F9C06A;
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 82px;
+    height: 82px;
+    margin-right: 6.5rem;
+}
+
+.pointer-right i{
+    font-size: 24px;
+    padding: 29px;
+}
+
+.feed-back .feed-back-content div .feedback-card div{
+    position: relative;
+    width: 100%;
+}   
+
+.feedback-message{
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background: #FFF9F1;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.feedback-message i{
+    font-size: 110px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 3rem;
+    color: #603809;
+}
+
+.feed-back .feed-back-content div div p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #707070;
+    text-align: center;
+    width: 80%;
+    margin: 0 8rem;
 }
